@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   background: #ffffff;
   overflow: hidden;
 }
@@ -45,4 +45,24 @@
 .hero-subheading {
   font-size: 14px;
   font-weight: 400;
+}
+
+.hero-btnone {
+  background-color: #0D9488;
+  width: 166px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.hero-btntwo {
+  background-color: #CBD5E1;
+  width: 166px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0F172A;
 }
