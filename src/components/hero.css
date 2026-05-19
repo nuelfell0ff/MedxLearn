@@ -1,0 +1,48 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* Black Grid */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+
+  /* Optional smooth fade */
+  mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+
+  pointer-events: none;
+}
+
+.btn-one {
+  width: 278px;
+  height: 32px;
+  border-radius: 32px;
+  background-color: #0D9488 20%;
+  color: #0D9488;
+  font-size: 12px;
+  border: 1px solid #0D9488 !important;
+}
+
+.hero-heading {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.hero-heading span {
+  color: #0D9488;
+}
+
+.hero-subheading {
+  font-size: 14px;
+  font-weight: 400;
+}
