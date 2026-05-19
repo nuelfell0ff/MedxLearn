@@ -1,5 +1,6 @@
 import React from 'react'
 import './hero.css'
+import heroImg from '../assets/Frame-1321316474.png'
 
 const Hero = () => {
   return (
@@ -14,6 +15,16 @@ const Hero = () => {
               <button className='btn hero-btnone'>Get a Free Demo</button>
               <button className='btn hero-btntwo'>Explore Platform</button>
             </div>
+            <div className='d-flex align-items-center'>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div className='hero-right'>
+            <img src={{heroImg}} alt="hero image" />
           </div>
         </div>
       </section>
