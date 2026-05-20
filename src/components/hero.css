@@ -67,3 +67,7 @@
   font-weight: 600;
   color: #0F172A;
 }
+
+.hero-right img {
+  width: 600px;
+}

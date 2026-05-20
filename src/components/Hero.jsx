@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       <section className='hero'>
-        <div classsName='content container-fluid px-5 d-lg-flex align-items-center justify-content-center'>
+        <div className='content container-fluid px-5 d-lg-flex align-items-center justify-content-between'>
           <div className='hero-left'>
             <div className='btn-one btn'>• Next Generation Edtech infrastructure</div>
             <h1 className='hero-heading'>The <span>Operating <br /> System</span> for modern <br /> institutions.</h1>
@@ -24,7 +24,7 @@ const Hero = () => {
             </div>
           </div>
           <div className='hero-right'>
-            <img src={{heroImg}} alt="hero image" />
+            <img src={heroImg} alt="hero image" />
           </div>
         </div>
       </section>
