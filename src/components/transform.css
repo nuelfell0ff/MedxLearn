@@ -1,4 +1,4 @@
-.hero {
+.transform {
   position: relative;
   min-height: 90vh;
   background: #ffffff;
@@ -9,25 +9,13 @@
 }
 
 /* Black Grid */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
-
-  background-size: 40px 40px;
-
-  /* Optional smooth fade */
-  mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
-
-  pointer-events: none;
+.transform::before {
+  display: none;
+  /* grid disabled */
 }
 
-.btn-one {
-  width: 278px;
+.transform .btn-one {
+  width: 120px;
   height: 32px;
   border-radius: 32px;
   background-color: #0D9488 20%;
@@ -36,7 +24,7 @@
   border: 1px solid #0D9488 !important;
 }
 
-.hero .content {
+.transform .content {
   position: relative;
   z-index: 1;
   display: flex;
@@ -72,13 +60,7 @@
   /* keep the small built text left-aligned inside this block */
 }
 
-/* default small-built text */
-.built-text .built-small {
-  font-size: 13px;
-  line-height: 1.1;
-}
-
-/* Large screens: side-by-side layout and left-aligned text
+/* Large screens: side-by-side layout and left-aligned text */
 @media (min-width: 992px) {
   .hero .content {
     flex-direction: row;
@@ -96,7 +78,7 @@
   .built-text {
     text-align: left;
   }
-} */
+}
 
 .hero-right {
   display: flex;
@@ -161,41 +143,37 @@
   border: 1px solid #0F172A;
 }
 
-  /* Small screens: increase hero text sizes and image for readability
-  @media (max-width: 576px) {
-    .hero {
-      min-height: 75vh;
-      padding: 1rem 0;
+/* Small screens: reduce hero text sizes for better fit */
+/* @media (max-width: 576px) {
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero-heading {
+    font-size: 32px;
+    line-height: 1.05;
+  }
+
+  .hero-subheading {
+    font-size: 12px;
+  }
+
+  .btn-one {
+    width: 220px;
+    height: 30px;
+    font-size: 11px;
+  }
+
+  .hero-btnone,
+  .hero-btntwo {
+    width: 140px;
+    height: 36px;
+    font-size: 12px;
+
+    .transform::before {
+      display: none;
     }
 
-    .hero-heading {
-      font-size: 36px;
-      line-height: 1.05;
-    }
-
-    .hero-subheading {
-      font-size: 14px;
-    }
-
-    .btn-one {
-      width: 240px;
-      height: 34px;
-      font-size: 12px;
-    }
-
-    .hero-btnone,
-    .hero-btntwo {
-      width: 150px;
-      height: 40px;
-      font-size: 13px;
-    }
-
-    .built-text .built-small {
-      font-size: 14px;
-    }
-
-    .hero-right img {
-      width: 380px;
-      max-width: 90%;
-    }
-  } */
+    width: 320px;
+  }
+} */
