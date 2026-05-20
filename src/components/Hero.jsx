@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       <section className='hero'>
-        <div className='content container-fluid px-5 d-lg-flex align-items-center justify-content-between'>
+        <div className='content container-fluid px-5 d-lg-flex align-items-center justify-content-center gap-5'>
           <div className='hero-left'>
             <div className='btn-one btn'>• Next Generation Edtech infrastructure</div>
             <h1 className='hero-heading'>The <span>Operating <br /> System</span> for modern <br /> institutions.</h1>
