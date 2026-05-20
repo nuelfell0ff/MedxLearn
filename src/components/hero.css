@@ -3,6 +3,9 @@
   min-height: 80vh;
   background: #ffffff;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Black Grid */
@@ -31,6 +34,34 @@
   color: #0D9488;
   font-size: 12px;
   border: 1px solid #0D9488 !important;
+}
+
+.hero .content {
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 720px;
+}
+
+.hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-right img {
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+  display: block;
 }
 
 .hero-heading {
@@ -66,8 +97,4 @@
   font-size: 14px;
   font-weight: 600;
   color: #0F172A;
-}
-
-.hero-right img {
-  width: 600px;
 }
