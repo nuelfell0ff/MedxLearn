@@ -4,6 +4,7 @@ import Hero from './components/Hero.jsx';
 import Transform from './components/Transform.jsx';
 import Management from './components/Management.jsx';
 import Institution from './components/Institution.jsx';
+import Industries from './components/Industries.jsx';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Transform />
       <Management />
       <Institution />
+      <Industries />
     </>
   )
 }
