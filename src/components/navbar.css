@@ -6,6 +6,15 @@
   margin-right: 10px;
 }
 
+.navbar .container-fluid.navbar-shell {
+  width: 100%;
+  max-width: var(--site-max-width);
+  margin: 0 auto;
+  padding-left: var(--site-x-pad) !important;
+  padding-right: var(--site-x-pad) !important;
+  box-sizing: border-box;
+}
+
 .navbar-brand {
   font-size: 20px !important;
   font-weight: 600 !important;

@@ -8,6 +8,13 @@
   justify-content: center;
 }
 
+/* Ensure hero section cannot be overridden by other component CSS */
+section.hero {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
 /* Black Grid */
 .hero::before {
   content: "";
@@ -44,21 +51,50 @@
   gap: 20px;
   align-items: center;
   justify-content: center;
-  padding: 0 1rem;
+  padding: 0 var(--site-x-pad);
+  max-width: var(--site-max-width);
+  margin: 0 auto;
+}
+
+/* Large screens: side-by-side layout and left-aligned text for hero */
+@media (min-width: 992px) {
+  .hero .content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 3rem;
+  }
+
+  .hero-left {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .built-text {
+    text-align: left;
+  }
+}
+
+/* Slightly reduce heading size on large screens */
+@media (min-width: 992px) {
+  .hero-heading {
+    font-size: 52px;
+  }
 }
 
 .hero-left {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   max-width: 720px;
 }
 
 .hero-actions {
   display: flex;
   gap: 12px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .built-info {
@@ -161,7 +197,38 @@
   border: 1px solid #0F172A;
 }
 
-  /* Small screens: increase hero text sizes and image for readability
+@media (max-width: 991.98px) {
+  .hero-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  /* Keep most elements centered on small screens; special info text aligns left */
+  .built-info {
+    justify-content: flex-start;
+  }
+
+  .built-text {
+    text-align: left;
+  }
+
+  .hero-heading,
+  .hero-subheading {
+    text-align: center;
+  }
+
+  /* hero image responsive sizing on small screens */
+  .hero-right img {
+    width: 380px;
+    max-width: 90%;
+  }
+}
+
+/* Small screens: increase hero text sizes and image for readability
   @media (max-width: 576px) {
     .hero {
       min-height: 75vh;

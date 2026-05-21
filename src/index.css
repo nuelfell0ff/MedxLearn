@@ -5,3 +5,10 @@ body,
 #root {
   font-family: 'Poppins', sans-serif;
 }
+
+:root {
+  /* horizontal page padding used by header and sections */
+  --site-x-pad: 1rem;
+  /* matches Bootstrap px-5 */
+  --site-max-width: 1200px;
+}

@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <>
       <section className='hero'>
-        <div className='content'>
+        <div className='content px-3 py-5'>
           <div className='hero-left'>
             <div className='btn-one btn'>• Next Generation Edtech infrastructure</div>
             <h1 className='hero-heading'>The <span>Operating <br /> System</span> for modern <br /> institutions.</h1>

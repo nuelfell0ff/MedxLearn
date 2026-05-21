@@ -1,0 +1,160 @@
+/* Management section styles */
+.management {
+  padding: 60px 0 80px;
+  background: #F8FBFC;
+  color: #0F172A;
+}
+
+.management .container {
+  width: 100%;
+  max-width: var(--site-max-width);
+  margin: 0 auto;
+  padding: 0 var(--site-x-pad);
+}
+
+.management-top {
+  max-width: 980px;
+  margin-bottom: 32px;
+}
+
+.management-heading {
+  font-size: 61px;
+  line-height: 1.02;
+  margin: 12px 0 8px;
+  font-weight: 800;
+}
+
+.management-heading span {
+  color: #0D9488;
+}
+
+.management-subheading {
+  color: #6B7280;
+  margin-bottom: 15px;
+}
+
+.management-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 28px;
+}
+
+.module-card {
+  background: #fff;
+  border: 1px solid #E6EEF0;
+  border-radius: 18px;
+  padding: 22px 22px 26px;
+  min-height: 180px;
+  box-shadow: 0 6px 18px rgba(12, 46, 54, 0.03);
+  display: flex;
+  flex-direction: column;
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.module-card.highlight {
+  border: 3px solid rgba(13, 148, 136, 0.15);
+}
+
+/* Hover state: green border and soft green glow */
+.module-card:hover {
+  border-color: #0D9488;
+  box-shadow: inset 0 0 0 1px #0D9488, 0 18px 40px rgba(13, 148, 136, 0.12);
+  transform: translateY(-4px);
+}
+
+.module-card:focus-within,
+.module-card:focus {
+  border-color: #0D9488;
+  box-shadow: inset 0 0 0 1px #0D9488, 0 12px 30px rgba(13, 148, 136, 0.10);
+}
+
+.card-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #E6F6F3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.card-icon img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: block;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.card-desc {
+  font-size: 11px;
+  color: #475569;
+  margin: 0 0 12px;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.card-list li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 10px;
+  color: #0F172A;
+}
+
+.card-list li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: #0D9488;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+@media (max-width: 991.98px) {
+  .management-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .management-heading {
+    font-size: 57px !important;
+    text-align: center;
+  }
+
+  .management-top {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .management-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .management-heading {
+    font-size: 57px;
+  }
+
+  .module-card {
+    padding: 18px;
+  }
+}
+
+/* small polish: ensure buttons align like other sections */
+.management .btn-one {
+  width: auto;
+  display: inline-block;
+}
