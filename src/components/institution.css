@@ -1,0 +1,136 @@
+.institution {
+  padding: 64px 0 80px;
+  background: #FFFFFF;
+  color: #0F172A;
+}
+
+.institution .container {
+  width: 100%;
+  max-width: var(--site-max-width);
+  margin: 0 auto;
+  padding: 0 var(--site-x-pad);
+}
+
+.institution-top {
+  max-width: 730px;
+  margin-bottom: 28px;
+}
+
+.institution .btn-one {
+  width: 160px;
+  height: 32px;
+  border-radius: 32px;
+  background-color: #0D9488 20%;
+  color: #0D9488;
+  font-size: 12px;
+  border: 1px solid #0D9488 !important;
+}
+
+.institution-heading {
+  font-size: 62px;
+  line-height: 1.05;
+  margin: 0 0 14px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  /* color: #0F1B42; */
+}
+
+.institution-heading span {
+  color: #08A99A;
+}
+
+.institution-subheading {
+  font-size: 15px;
+  margin: 0;
+  color: #4B5563;
+  max-width: 660px;
+}
+
+.institution-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.institution-card {
+  background: #F7F9FC;
+  border: 1px solid #D8E2EA;
+  border-radius: 34px;
+  padding: 26px 26px 24px;
+  min-height: 164px;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.04);
+}
+
+.institution-card:hover {
+  border-color: #0D9488;
+  box-shadow: inset 0 0 0 1px #0D9488, 0 8px 26px rgba(13, 148, 136, 0.16);
+}
+
+.institution-icon {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 10px;
+  color: #0D9488;
+}
+
+.institution-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.institution-title {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.institution-desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #334155;
+}
+
+@media (max-width: 991.98px) {
+  .institution-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .institution-heading {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .institution {
+    padding: 50px 0 62px;
+  }
+
+  .institution-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .institution-heading {
+    font-size: 36px;
+  }
+
+  .institution-subheading {
+    font-size: 15px;
+  }
+
+  .institution-card {
+    border-radius: 24px;
+    padding: 20px;
+  }
+
+  .institution-title {
+    font-size: 18px;
+  }
+
+  .institution-desc {
+    font-size: 14px;
+  }
+}

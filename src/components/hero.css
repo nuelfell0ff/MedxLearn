@@ -223,7 +223,8 @@ section.hero {
 
   /* hero image responsive sizing on small screens */
   .hero-right img {
-    width: 380px;
+    margin-top: 3rem;
+    width: 520px;
     max-width: 90%;
   }
 }

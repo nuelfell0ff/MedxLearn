@@ -37,6 +37,7 @@
   margin: 0 auto;
 }
 
+
 .transform-info {
   display: flex;
   align-items: flex-start;
@@ -54,6 +55,10 @@
 }
 
 @media (max-width: 991.98px) {
+  .transform .transform-grid {
+    padding: 0 5rem !important;
+  }
+
   .transform-left {
     display: flex;
     flex-direction: column;
@@ -69,6 +74,11 @@
   /* Override: these info text blocks should align to the left on small screens */
   .transform-text {
     text-align: left;
+  }
+
+
+  .transform .transform-left .hero-heading {
+    font-size: 55px !important;
   }
 
   .transform .btn-one {
@@ -111,6 +121,7 @@
     align-items: flex-start;
     text-align: left;
   }
+
 }
 
 /* end large screens */

@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import Transform from './components/Transform.jsx';
 import Management from './components/Management.jsx';
+import Institution from './components/Institution.jsx';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Hero />
       <Transform />
       <Management />
+      <Institution />
     </>
   )
 }
