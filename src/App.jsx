@@ -8,6 +8,8 @@ import Features from './components/Features.jsx';
 import Industries from './components/Industries.jsx';
 import Business from './components/Business.jsx';
 import Vision from './components/Vision.jsx';
+import Digitalize from './components/Digitalize.jsx';
+import Footer from './components/Footer.jsx';
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
       <Features />
       <Business />
       <Vision />
+      <Digitalize />
+      <Footer />
     </>
   )
 }
