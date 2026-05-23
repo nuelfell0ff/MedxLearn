@@ -1,0 +1,115 @@
+.vision {
+  position: relative;
+  overflow: hidden;
+  padding: 72px 0 88px;
+  background:
+    radial-gradient(circle at 30% 35%, rgba(19, 153, 142, 0.45) 0%, rgba(13, 104, 98, 0.28) 24%, rgba(8, 63, 61, 0.06) 58%),
+    linear-gradient(135deg, #0A5C58 0%, #0A746E 38%, #0D5A56 100%);
+  color: #F6FBFB;
+}
+
+.vision-grid-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 72px 72px;
+  opacity: 0.82;
+}
+
+.vision-shell {
+  position: relative;
+  z-index: 1;
+  max-width: var(--site-max-width);
+  margin: 0 auto;
+  padding: 0 var(--site-x-pad);
+}
+
+.vision-content {
+  max-width: 1180px;
+}
+
+.vision .btn-one {
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  color: #EEF9F8;
+  border: 2px solid rgba(235, 248, 247, 0.86) !important;
+  background: rgba(255, 255, 255, 0.14);
+  padding: 0 28px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.vision-heading {
+  margin: 0;
+  color: #F8FCFC;
+  font-size: 72px;
+  line-height: 1.02;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+  max-width: 1120px;
+}
+
+.vision-quote {
+  display: inline-block;
+  margin-right: 4px;
+  transform: translateY(-2px);
+}
+
+.vision-subheading {
+  margin: 30px 0 0;
+  max-width: 1200px;
+  color: rgba(234, 245, 245, 0.82);
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+@media (max-width: 1199.98px) {
+  .vision-heading {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .vision {
+    padding: 54px 0 62px;
+  }
+
+  .vision-grid-overlay {
+    background-size: 58px 58px;
+  }
+
+  .vision-heading {
+    font-size: 42px;
+  }
+
+  .vision-subheading {
+    margin-top: 22px;
+    font-size: 16px;
+  }
+
+  .vision .btn-one {
+    margin-bottom: 16px;
+    padding: 0 22px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .vision-shell {
+    text-align: left;
+  }
+
+  .vision-heading {
+    font-size: 38px;
+    letter-spacing: -0.4px;
+  }
+
+  .vision-subheading {
+    font-size: 15px;
+  }
+}
