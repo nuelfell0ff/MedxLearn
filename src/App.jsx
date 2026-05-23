@@ -6,6 +6,7 @@ import Management from './components/Management.jsx';
 import Institution from './components/Institution.jsx';
 import Features from './components/Features.jsx';
 import Industries from './components/Industries.jsx';
+import Business from './components/Business.jsx';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Institution />
       <Industries />
       <Features />
+      <Business/>
     </>
   )
 }
