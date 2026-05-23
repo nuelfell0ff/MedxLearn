@@ -55,14 +55,14 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
 }
 
 .digitalize-heading {
   margin: 0;
   color: #F9FCFC;
-  font-size: 62px;
+  font-size: 56px;
   line-height: 0.98;
   font-weight: 800;
   letter-spacing: -0.8px;
@@ -72,7 +72,7 @@
   margin: 28px 0 0;
   max-width: 840px;
   color: rgba(233, 242, 241, 0.9);
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.25;
   font-weight: 400;
 }
@@ -93,7 +93,7 @@
   border-radius: 16px;
   height: 58px;
   padding: 0 22px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   cursor: pointer;
   transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
@@ -127,11 +127,11 @@
   }
 
   .digitalize-heading {
-    font-size: 54px;
+    font-size: 48px;
   }
 
   .digitalize-subheading {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -155,18 +155,18 @@
     width: fit-content;
     max-width: 100%;
     height: 34px;
-    font-size: 12px;
+    font-size: 11px;
     margin-bottom: 18px;
   }
 
   .digitalize-heading {
-    font-size: 55px;
+    font-size: 40px;
     line-height: 1.02;
   }
 
   .digitalize-subheading {
     margin-top: 14px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.35;
   }
 
@@ -180,7 +180,7 @@
     width: 100%;
     min-width: 0;
     height: 50px;
-    font-size: 15px;
+    font-size: 14px;
     border-radius: 14px;
   }
 }
@@ -191,6 +191,6 @@
   }
 
   .digitalize-subheading {
-    font-size: 12px;
+      font-size: 13px;
   }
 }
