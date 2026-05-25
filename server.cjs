@@ -1,10 +1,9 @@
 const http = require('node:http')
 const fs = require('node:fs')
 const path = require('node:path')
-const { fileURLToPath } = require('node:url')
 
-const port = Number(process.env.PORT) || 5173
-const host = '0.0.0.0'
+const port = Number(process.env.PORT || process.env.PXXL_PORT || process.env.BIND_PORT) || 5173
+const host = process.env.HOST || process.env.BIND_ADDRESS || '0.0.0.0'
 const distDir = path.join(process.cwd(), 'dist')
 const indexFile = path.join(distDir, 'index.html')
 
@@ -43,6 +42,14 @@ function resolveFile(requestUrl) {
 
 const server = http.createServer((request, response) => {
   const requestUrl = request.url || '/'
+
+  if (requestUrl === '/health' || requestUrl === '/healthz' || requestUrl === '/ready') {
+    response.statusCode = 200
+    response.setHeader('Content-Type', 'text/plain; charset=utf-8')
+    response.end('ok')
+    return
+  }
+
   const filePath = resolveFile(requestUrl)
   const finalPath = filePath && fs.existsSync(filePath) ? filePath : indexFile
 
