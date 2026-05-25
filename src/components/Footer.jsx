@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.css'
+import logoImg from '../assets/medxlearnpng.png'
 
 const platformLinks = ['Products', 'Features', 'Business Model', 'Industries', 'Request Demo']
 const companyLinks = ['About Us', 'Vision', 'Careers', 'Blog', 'Press']
@@ -12,8 +13,7 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-brand-block">
             <a className="footer-brand" href="#" onClick={(event) => event.preventDefault()}>
-              <span className="footer-logo" aria-hidden="true"></span>
-              <span className="footer-brand-text">MedxLearn</span>
+              <img src={logoImg} alt="MedxLearn logo" className="footer-logo" />
             </a>
 
             <p className="footer-copy">
@@ -23,10 +23,18 @@ const Footer = () => {
             </p>
 
             <div className="footer-socials" aria-label="Social links">
-              <a href="#" onClick={(event) => event.preventDefault()} aria-label="X">X</a>
-              <a href="#" onClick={(event) => event.preventDefault()} aria-label="LinkedIn">in</a>
-              <a href="#" onClick={(event) => event.preventDefault()} aria-label="Instagram">ig</a>
-              <a href="#" onClick={(event) => event.preventDefault()} aria-label="WhatsApp">wa</a>
+              <a href="#" onClick={(event) => event.preventDefault()} aria-label="X">
+                <i className="bi bi-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#" onClick={(event) => event.preventDefault()} aria-label="LinkedIn">
+                <i className="bi bi-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#" onClick={(event) => event.preventDefault()} aria-label="Instagram">
+                <i className="bi bi-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#" onClick={(event) => event.preventDefault()} aria-label="WhatsApp">
+                <i className="bi bi-whatsapp" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
 

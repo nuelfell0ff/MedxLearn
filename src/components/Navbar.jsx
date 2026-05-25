@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './navbar.css'
+import logoImg from '../assets/medxlearnpng.png'
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -23,8 +24,7 @@ const Navbar = () => {
     <nav className="site-navbar">
       <div className="navbar-shell">
         <a className="brand-lockup" href="#" onClick={handleNavClick}>
-          <span className="logo-icon" aria-hidden="true"></span>
-          <span className="brand-text">MedxLearn</span>
+          <img src={logoImg} alt="MedxLearn logo" className="brand-logo" />
         </a>
 
         <button
@@ -46,8 +46,7 @@ const Navbar = () => {
           <div className="sidebar-head">
             <div>
               <a className="brand-lockup mb-3" href="#" onClick={handleNavClick}>
-                <span className="logo-icon" aria-hidden="true"></span>
-                <span className="brand-text">MedxLearn</span>
+                <img src={logoImg} alt="MedxLearn logo" className="brand-logo" />
               </a>
               {/* <p className="sidebar-kicker">Menu</p> */}
             </div>
